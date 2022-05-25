@@ -5,7 +5,7 @@ const fs = require('fs');
 
 let RNC = [];
 app.get('/', function (req,res) {
-    res.sendFile('/Users/eric.collado/Videos/NewAPI-DGII/src/index.html');
+    res.sendFile('./index.html');
    
 });
 
@@ -14,7 +14,7 @@ app.get('/', function (req,res) {
 
 app.get('/rnc/id=:id',(req,res) =>{
     const id = (req.params.id);
-    var some = fs.readFileSync('/Users/eric.collado/Videos/NewAPI-DGII/src/DGII_RNC.txt', 'utf-8');
+    var some = fs.readFileSync('./DGII_RNC.txt', 'utf-8');
     let rnc = [];
 
     if(id.length>= 9 && id.length < 12  && isNaN(id) == false){
