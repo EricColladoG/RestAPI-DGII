@@ -2,8 +2,6 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 
-const rnc = require('./sample.json');
-const {contribuyentes} = rnc[0];
 
 let RNC = [];
 app.get('/', function (req,res) {
