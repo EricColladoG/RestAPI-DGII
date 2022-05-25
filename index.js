@@ -14,7 +14,7 @@ app.get('/', function (req,res) {
 
 app.get('/rnc/id=:id',(req,res) =>{
     const id = (req.params.id);
-    var some = fs.readFileSync(__dirname + '/DGII_RNC.txt', 'utf-8');
+    var some = fs.readFileSync(__dirname + '/DGII_RNC.TXT', 'utf-8');
 
     let rnc = [];
 
