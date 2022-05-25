@@ -5,7 +5,7 @@ const fs = require('fs');
 
 let RNC = [];
 app.get('/', function (req,res) {
-    res.sendFile('./index.html');
+    res.sendFile(__dirname + '/index.html');
    
 });
 
